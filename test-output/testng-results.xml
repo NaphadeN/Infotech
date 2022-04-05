@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-05T16:37:08Z" name="Default suite" finished-at="2022-04-05T16:38:15Z" duration-ms="67836">
+    <groups>
+    </groups>
+    <test started-at="2022-04-05T16:37:08Z" name="Default test" finished-at="2022-04-05T16:38:15Z" duration-ms="67836">
+      <class name="DEC.TestNGwithAnnotation">
+        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:08Z" name="Googlesetup" finished-at="2022-04-05T22:07:14Z" duration-ms="6462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Googlesetup -->
+        <test-method signature="ForWork()[pri:1, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:14Z" name="ForWork" finished-at="2022-04-05T22:07:49Z" duration-ms="35000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForWork -->
+        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:49Z" name="EndSession" finished-at="2022-04-05T22:07:50Z" duration-ms="935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSession -->
+        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:50Z" name="Googlesetup" finished-at="2022-04-05T22:07:56Z" duration-ms="5551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Googlesetup -->
+        <test-method signature="CreateAccount()[pri:2, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:56Z" name="CreateAccount" finished-at="2022-04-05T22:08:02Z" duration-ms="6810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAccount -->
+        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:02Z" name="EndSession" finished-at="2022-04-05T22:08:03Z" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSession -->
+        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:03Z" name="Googlesetup" finished-at="2022-04-05T22:08:09Z" duration-ms="5546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Googlesetup -->
+        <test-method signature="MyPractice1()[pri:3, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:09Z" name="MyPractice1" finished-at="2022-04-05T22:08:09Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyPractice1 -->
+        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:09Z" name="EndSession" finished-at="2022-04-05T22:08:09Z" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSession -->
+        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:09Z" name="Googlesetup" finished-at="2022-04-05T22:08:15Z" duration-ms="5535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Googlesetup -->
+        <test-method signature="Mypractice2()[pri:4, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:15Z" name="Mypractice2" finished-at="2022-04-05T22:08:15Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypractice2 -->
+        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:15Z" name="EndSession" finished-at="2022-04-05T22:08:15Z" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndSession -->
+      </class> <!-- DEC.TestNGwithAnnotation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
