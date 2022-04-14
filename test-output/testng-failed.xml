@@ -5,10 +5,9 @@
     <classes>
       <class name="DEC.TestNGwithAnnotation">
         <methods>
-          <include name="CreateAccount"/>
+          <include name="ContactSales"/>
           <include name="Googlesetup"/>
           <include name="EndSession"/>
-          <include name="ForWork"/>
         </methods>
       </class> <!-- DEC.TestNGwithAnnotation -->
     </classes>

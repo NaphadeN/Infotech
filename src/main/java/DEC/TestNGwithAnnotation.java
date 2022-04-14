@@ -1,5 +1,9 @@
 package DEC;
 
+import static org.testng.Assert.assertEquals;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -9,11 +13,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 
+import org.openqa.selenium.TakesScreenshot;
 public class TestNGwithAnnotation {
 	
 	static WebDriver driver; // Initialize the Webdriver which can be accessible throughout the class
@@ -155,8 +165,15 @@ public class TestNGwithAnnotation {
    
    @Test(priority = 3)
    
-   public void MyPractice1() {
+   public void MyPractice1() throws InterruptedException {
+	   driver.findElement(By.linkText("Gmail")).click();
 	   
+	   JavascriptExecutor js3 = (JavascriptExecutor) driver;  //JavascriptExecutor is an interface
+	   js3.executeScript("window.scrollBy(0,3750)", "");  // Method
+	 
+	   WebElement HelpC=driver.findElement(By.linkText("Help Center"));
+	   
+	
 	   System.out.println("Hey my MyPractice1 Executed ......!!");
 	   
    }
@@ -171,11 +188,76 @@ public class TestNGwithAnnotation {
    }
    
    
+   @Test(priority=-1)
+   
+   public void ContactSales() throws InterruptedException, IOException {
+	   
+	   driver.findElement(By.linkText("Gmail")).click();
+	   
+		  driver.findElement(By.partialLinkText("For")).click();
+		  
+		  
+		  
+		  
+	String ActualTitle = driver.getTitle();
+    	
+    		
+    		System.out.println(ActualTitle);
+    		
+    		
+    		
+    		String ExpectedTitle = "Gmail: Secure Enterprise Email for Business | Google  ";
+
+    		//Assert.assertEquals(ExpectedTitle, ActualTitle);    //Assertion --> Hard Assert
+    		
+    		
+    		//Soft Assert
+    		SoftAssert softassertion = new SoftAssert();
+    		softassertion.assertEquals(ActualTitle,ExpectedTitle,"Title  Matched !!"); 
+    		
+    		
+    		System.out.println("PK");
+    		System.out.println("OK");
+    	
+	
+
+			//Take the screenshot
+	        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);   //Import File . TakeScreenshot, OutputType ,FileUtils.
+	        
+	        //Copy the file to a location and use try catch block to handle exception
+	    
+	            FileUtils.copyFile(screenshot, new File("D:\\New folder (2)\\Nikhil.png"));
+	            
+	            
+	           
+
+		  System.out.println("My Above Code is Right");
+		  driver.findElement(By.linkText("Contact sales")).click();
+		  Thread.sleep(4000);
+		  
+		  driver.findElement(By.xpath("//*[@id=\"faq-list__item-1\"]/h4")).click();
+		  
+		  Select se56= new Select(driver.findElement(By.name("Number_of_Employees__c")));  //Select is class
+		 	  
+		  //se56.selectByIndex(1);
+		  se56.selectByVisibleText("350-999");
+		  
+		  
+		  
+		  List<WebElement> allText = driver.findElements(By.name("Number_of_Employees__c"));
+		  
+		  for ( WebElement element: allText) {            //  For-each Loop or Enhanced For Loop
+			    System.out.println(element.getText());
+
+				softassertion.assertAll();
+			    
+		  }
+   }
  @AfterMethod
  
  public void EndSession() {
 	 
-driver.quit();
+//driver.quit();
  }
 
 }

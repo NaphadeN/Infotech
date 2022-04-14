@@ -1,57 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-05T16:37:08Z" name="Default suite" finished-at="2022-04-05T16:38:15Z" duration-ms="67836">
+  <suite started-at="2022-04-10T11:01:16Z" name="Default suite" finished-at="2022-04-10T11:01:45Z" duration-ms="28682">
     <groups>
     </groups>
-    <test started-at="2022-04-05T16:37:08Z" name="Default test" finished-at="2022-04-05T16:38:15Z" duration-ms="67836">
+    <test started-at="2022-04-10T11:01:16Z" name="Default test" finished-at="2022-04-10T11:01:45Z" duration-ms="28682">
       <class name="DEC.TestNGwithAnnotation">
-        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:08Z" name="Googlesetup" finished-at="2022-04-05T22:07:14Z" duration-ms="6462" status="PASS">
+        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@58cbafc2]" started-at="2022-04-10T16:31:16Z" name="Googlesetup" finished-at="2022-04-10T16:31:23Z" duration-ms="7309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Googlesetup -->
-        <test-method signature="ForWork()[pri:1, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:14Z" name="ForWork" finished-at="2022-04-05T22:07:49Z" duration-ms="35000" status="PASS">
+        <test-method signature="ContactSales()[pri:-1, instance:DEC.TestNGwithAnnotation@58cbafc2]" started-at="2022-04-10T16:31:23Z" name="ContactSales" finished-at="2022-04-10T16:31:45Z" duration-ms="21327" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Title  Matched !! expected [Gmail: Secure Enterprise Email for Business | Google  ] but found [Gmail: Secure Enterprise Email for Business | Google Workspace]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Title  Matched !! expected [Gmail: Secure Enterprise Email for Business | Google  ] but found [Gmail: Secure Enterprise Email for Business | Google Workspace]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at DEC.TestNGwithAnnotation.ContactSales(TestNGwithAnnotation.java:257)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ForWork -->
-        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:49Z" name="EndSession" finished-at="2022-04-05T22:07:50Z" duration-ms="935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EndSession -->
-        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:50Z" name="Googlesetup" finished-at="2022-04-05T22:07:56Z" duration-ms="5551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Googlesetup -->
-        <test-method signature="CreateAccount()[pri:2, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:07:56Z" name="CreateAccount" finished-at="2022-04-05T22:08:02Z" duration-ms="6810" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateAccount -->
-        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:02Z" name="EndSession" finished-at="2022-04-05T22:08:03Z" duration-ms="715" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EndSession -->
-        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:03Z" name="Googlesetup" finished-at="2022-04-05T22:08:09Z" duration-ms="5546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Googlesetup -->
-        <test-method signature="MyPractice1()[pri:3, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:09Z" name="MyPractice1" finished-at="2022-04-05T22:08:09Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyPractice1 -->
-        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:09Z" name="EndSession" finished-at="2022-04-05T22:08:09Z" duration-ms="633" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EndSession -->
-        <test-method is-config="true" signature="Googlesetup()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:09Z" name="Googlesetup" finished-at="2022-04-05T22:08:15Z" duration-ms="5535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Googlesetup -->
-        <test-method signature="Mypractice2()[pri:4, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:15Z" name="Mypractice2" finished-at="2022-04-05T22:08:15Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mypractice2 -->
-        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@2034b64c]" started-at="2022-04-05T22:08:15Z" name="EndSession" finished-at="2022-04-05T22:08:15Z" duration-ms="589" status="PASS">
+        </test-method> <!-- ContactSales -->
+        <test-method is-config="true" signature="EndSession()[pri:0, instance:DEC.TestNGwithAnnotation@58cbafc2]" started-at="2022-04-10T16:31:45Z" name="EndSession" finished-at="2022-04-10T16:31:45Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndSession -->
